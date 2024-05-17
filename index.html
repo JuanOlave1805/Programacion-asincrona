@@ -4,51 +4,56 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ejercicios JS</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="CSS/style.css">
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-  <nav class="px-20 pt-2 pb-4 flex justify-center">
-    <h1 class=""> Ejercicios JS</h1>
+<body class="text-neutral-950 bg-img-fondo bg-cover bg-[#f6d822] bg-no-repeat bg-center sm:bg-top ">
+  <nav class="pt-2 pb-4">
+    <h1 class="text-3xl text-[#410936] font-bold text-center"> Ejercicios JS</h1>
   </nav>
 
-  <section class="gridd w-full gap-2 bg-lime-200 px-20">
-    <article class="w-auto flex justify-center bg-red-400">
-      <p class="">
-        ejercicio
-      </p>
+  <section class="gridd w-full gap-2 xl:px-10 px-2 ">
+    <article class="flex flex-col p-2 bg-[#f6e7f7] rounded hover:bg-neutral-100">
+      <h3 class="text-xl text-center w-full">
+        <a href="">ejercicio 1</a>
+      </h3>
     </article>
-    <article class="w-auto flex justify-center bg-red-400">
-      <p class="">
-        ejercicio
-      </p>
+    <article class="w-auto flex flex-col p-2 bg-[#f6e7f7] rounded hover:bg-neutral-100">
+      <h3 class="text-xl text-center w-full">
+        <a href="">ejercicio 2</a>
+      </h3>
     </article>
-    <article class="w-auto flex justify-center bg-red-400">
-      <p class="">
-        ejercicio
-      </p>
+    <article class="w-auto flex flex-col p-2 bg-[#f6e7f7] rounded hover:bg-neutral-100">
+      <h3 class="text-xl text-center w-full">
+        <a href="">ejercicio 3</a>
+      </h3>
     </article>
-    <article class="w-auto flex justify-center bg-red-400">
-      <p class="">
-        ejercicio
-      </p>
+    <article class="w-auto flex flex-col p-2 bg-[#f6e7f7] rounded hover:bg-neutral-100">
+      <h3 class="text-xl text-center w-full">
+        <a href="">ejercicio 4</a>
+      </h3>
     </article>
-    <article class="w-auto flex justify-center bg-red-400">
-      <p class="">
-        ejercicio
-      </p>
-    </article>
-    <article class="w-auto flex justify-center bg-red-400">
-      <p class="">
-        ejercicio
-      </p>
+    <article class="w-auto flex flex-col p-2 bg-[#f6e7f7] rounded hover:bg-neutral-100">
+      <h3 class="text-xl text-center w-full">
+        <a href="">ejercicio 5</a>
+      </h3>
     </article>
   </section>
-  <div class="grid grid-flow-col auto-cols-max">
-  <div>01</div>
-  <div>02</div>
-  <div>03</div>
-</div>
   
+
+
+
+  <script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        backgroundImage: {
+          'img-fondo': "url('img/javascript.jpg')",
+          'footer-texture': "url('/img/footer-texture.png')",
+        }
+      }
+    }
+  }
+  </script>
 </body>
 </html>
