@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejercicios 2</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="../ejercicios js/ejercicio2.js"></script>
+</head>
+
+<body class="text-neutral-950 bg-img-fondo bg-cover bg-[#f6d822] bg-no-repeat bg-center sm:bg-top ">
+  <nav class="pt-2 pb-4 flex-col flex">
+    <h1 class="text-3xl text-[#410936] font-bold text-center"> Ejercicios 2</h1>
+  </nav>
+
+  <section class="w-full gap-2 xl:px-10 px-2 ">
+    <article class="p-2 bg-purple rounded">
+      <p class="text-base text-justify w-full">
+        En el siguiente código hay una llamada programada setTimeout, luego se ejecuta un cálculo pesado que demora más de 100 ms en finalizar. ¿Cuándo se ejecutará la función programada y por qué se ejecutará?
+        <br> a) Después del bucle.
+        <br> b) Antes del bucle.
+        <br> c) Al comienzo del bucle.
+        <br> ¿Qué va a mostrar alert()?
+      </p>
+      <img src="../img/punto 2.jpeg" alt="img">
+      <button class="text-xl px-3 py-1 mt-3 bg-sky-200 rounded hover:bg-blue-400 ease-in-out duration-300 hover:scale-105" onclick="ejecutar()">
+        Ejecutar
+      </button>
+      <p class="text-base text-justify w-full pt-10">
+        <b class="text-2xl">Respuesta:</b><br>
+        A) Se ejecuta después del bucle ya que el setTimeout vuelve asíncrono el código. Es decir, se ejecutará de ultimo la función que tiene el setTimeout.
+        <br>Primero el bucle llegara a el valor de 100000000, con esto el valor de i también incrementara hasta dicho valor.
+        <br>En conclusión, se ejecuta primero el bucle incrementando hasta 10000000 el valor de i, luego inicia la cuenta regresiva del setTimeout la cual es de 100ms y posteriormente se ejecuta el alert dentro del setTimeout.
+      </p>
+    </article>
+    <article class="flex flex-col p-2 mt-2">
+      <a class="text-xl text-end w-full" href="../index.html">
+        Volver
+      </a>
+    </article>
+
+  </section>
+  
+
+
+
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          backgroundImage: {
+            'img-fondo': "url('../img/javascript.jpg')",
+          },
+          colors: {
+            'purple': '#f6e7f7'
+          }
+        }
+      }
+    }
+  </script>
+</body>
+
+</html>
