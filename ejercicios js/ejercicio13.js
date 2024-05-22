@@ -4,7 +4,6 @@ function ejecutar(){
   setTimeout(() =>{
     promise1.then((value) => {
         console.log(value);
-        // Expected output: 123
     });
   }, 1000) 
 }
