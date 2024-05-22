@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejercicios 11</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="../ejercicios js/ejercicio11.js"></script>
+</head>
+
+<body class="text-neutral-950 bg-img-fondo bg-cover bg-[#f6d822] bg-no-repeat bg-center sm:bg-top ">
+  <nav class="pt-2 pb-4 flex-col flex">
+    <h1 class="text-3xl text-[#410936] font-bold text-center"> Ejercicios 11</h1>
+  </nav>
+
+  <section class="w-full gap-2 xl:px-10 px-2 ">
+    <article class="p-2 bg-purple rounded">
+      <p class="text-base text-justify w-full">
+        ¿Cuál es el resultado del código a continuación?
+      </p>
+      <img src="../img/punto 11.jpeg" alt="img">
+      <p class="text-base text-justify w-full pt-10">
+        <b class="text-2xl">Respuesta:</b><br>
+        El resultado de el codigo de la imagen es "100000000" ya que al tener setTimeout lo coloca al final de la cola, por lo tanto primero se ejecuta el bucle y hasta llegar a 100000000 es que ejecuta el alert dentro del setTimeout.
+        <br> Tener en cuenta que al colocar el setTimeout ya volvemos asincrono el codigo y para poder ejecutar primero el alert deberiamos poner un tiempo mayor de setTimeout del bucle para que se ejecute al final de la cola. 
+      </p>
+      <button class="text-xl px-3 py-1 mt-3 bg-sky-200 rounded hover:bg-blue-400 ease-in-out duration-300 hover:scale-105" onclick="ejecutar()">
+        Ejecutar
+      </button>
+    </article>
+    <article class="flex flex-col p-2 mt-2">
+      <a class="text-xl text-end w-full" href="../index.html">
+        Volver
+      </a>
+    </article>
+
+  </section>
+  
+
+
+
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          backgroundImage: {
+            'img-fondo': "url('../img/javascript.jpg')",
+          },
+          colors: {
+            'purple': '#f6e7f7'
+          }
+        }
+      }
+    }
+  </script>
+</body>
+
+</html>
